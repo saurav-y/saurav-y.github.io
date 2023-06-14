@@ -18,7 +18,20 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+      <h1>Hello, World!</h1>
     </div>
+    </div>
+  );
+}
+
+export default App;
+
+import React from 'react';
+
+function App() {
+  return (
+    
   );
 }
 
