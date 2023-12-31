@@ -38,9 +38,22 @@
   margin-bottom: 30px;
 }
 .skills-image > img {
-  margin-left: 80px;
+  max-width: 90%;
+  max-height: 90%;
+  padding-bottom: 10px;
+  height: auto;
+  background-color: rgb(158, 214, 233);
+  border-radius: 50%;
+
+  margin-top: 80px;
   max-width: 90%;
   height: auto;
+}
+.skills-image {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-left: 100px;
 }
 
 /* Media Query */

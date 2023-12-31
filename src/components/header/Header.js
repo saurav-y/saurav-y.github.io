@@ -3,6 +3,7 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import { FcViewDetails, FcPhone, FcBriefcase, FcMindMap } from "react-icons/fc";
 import {
   greeting,
   workExperiences,
@@ -41,12 +42,16 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">
+                <FcMindMap/> Skills
+                </a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">
+                <FcBriefcase /> Work Experiences
+                </a>
             </li>
           )}
           {viewOpenSource && (
@@ -70,7 +75,15 @@ function Header() {
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+              <a href="https://docs.google.com/document/d/1vZ6JWfWrGspEN8fi70cvSwvBX7BHWs6LxdU9bQCXq24"
+              target="_blank">
+              <FcViewDetails /> Resume
+              </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <FcPhone /> Contact Me
+            </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

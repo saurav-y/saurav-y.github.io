@@ -16,17 +16,15 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Saurav Y.",
+  username: "S.Y.",
   title: "Hey, I'm Saurav",
-  subTitle: emoji(
-    "An aspiring Full Stack Software Developer. Graduate Student at Carnegie Mellon University. Former Senior Software Engineer at Nference. Former Software Engineering Specialist at GE Power / Python (Flask, Pandas ..) / Salesforce / Reactjs ."
-  ),
-  resumeLink:
-    "", // Set to empty to hide the button
+  subTitle: "An aspiring Full Stack Software Developer. Graduate Student at Carnegie Mellon University. Former Senior Software Engineer at Nference. Former Software Engineering Specialist at GE Power / Python (Flask, Pandas ..) / Salesforce / Reactjs ."
+  ,
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -48,15 +46,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Skills",
+  subTitle: "",
   skills: [
+    emoji("⚡ Backend Development: Python: Flask, Celery, RestAPI"),
+    emoji("⚡ Frontend Development: ReactJs, HTML, CSS"),
+    emoji("⚡ Databases: SQL, Redis, MongoDb"),
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Data Analysis: Pandas, Numpy, Matplotlib, Seaborn, Jupyter Lab"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Data Science: Scikit-learn, TensorFlow"
+    ),
+    emoji(
+      "⚡ Salesforce Development: Aura and Lightning Web Components"
     )
   ],
 
@@ -65,52 +68,40 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "salesforce",
+      fontAwesomeClassname: "fab fa-salesforce"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "redis",
+      fontAwesomeClassname: "fas fa-bolt"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "microservices",
+      fontAwesomeClassname: "fas fa-sitemap"
     },
     {
-      skillName: "sql-database",
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git"
+    },
+    {
+      skillName: "Machine Learning",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "sql",
       fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",
@@ -130,19 +121,26 @@ const educationInfo = {
       logo: require("./assets/images/cmuLogo.png"),
       subHeader: "Master of Information Systems Management",
       duration: "May 2023 - May 2024",
-      desc: "description.",
+      gpa: "3.9/4",
+      desc: "Coursework: Distributed Sytems, NoSQL Database Management, Introduction to Machine Learning, Data Intensive Scalable Systems, Data Structures for Application Programmers",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Research Assistant: Leveraged Pandas to perform Data Analytics on a group of 300+ participants to identify the interdepencies of Drinking Alcohol and Social Demeanor.",
+        "Teaching Assistant: Assisted a cohort of 60 students through Doubt Clearing Sessions, Grading Assignments, and Exams.",
+        "Exemplar Project: One of 14 projects from a cohort of 150+ student to receive 'exemplar project' callout for implementing a Mobile to Cloud Application, along with the opportunity to demo the working of the application to the class."
       ]
     },
     {
       schoolName: "Vellore Institute of Technology",
-      logo: require("./assets/images/vitLogo.webp"),
+      logo: require("./assets/images/vit2.jpg"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "July 2106 - July 2020",
-      desc: "Coursework: Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      gpa: "3.77/4",
+      desc: "Coursework: Software Engineering, Web Security, Operating Systems, Data Structures and Algorithms, Computer Architechture and Organization, Internet of Things",
+      descBullets: [
+        "Developed and managed a successful coding platform with 170k+ views and 25.5k+ users.",
+        "Implemented an Anti-Bully Twitter bot, policing twitter feeds to safeguard users from inappropriate comments using Tweepy and Machine Learning.",
+        "Field Hockey: Captain, Best Promising Player, Best Outgoing Player, Best Midfielder."
+      ]
     }
   ]
 };
@@ -153,12 +151,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend: Python(Flask), MongoDB",
+      Stack: "Backend: Python, MongoDB, Redis",
       progressPercentage: "75%"
     },
     {
-      Stack: "Frontend/Design: Reactjs, HTML", //Insert stack or technology you have experience in
-      progressPercentage: "55%" //Insert relative proficiency in percentage
+      Stack: "Frontend/Design: Reactjs, HTML, CSS", //Insert stack or technology you have experience in
+      progressPercentage: "45%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Programming: Python, Java",
@@ -166,7 +164,7 @@ const techStack = {
     },
     {
       Stack: "Analytics: Pandas, SQL, Excel",
-      progressPercentage: "75%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -179,28 +177,32 @@ const workExperiences = {
   experience: [
     {
       role: "Senior Software Engineer",
-      company: "Nference",
+      company: "Nference (Mayo Clinic Partner)",
       companylogo: require("./assets/images/nferenceLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "August 2021 – April 2023",
+      desc: "Performed Data Anlaytics , Built AI Models, Developed Web Applications; All while contributing to better healthcare.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Lead the backend effort of the application layer of a web application to support guideline-directed medical therapy (GDMT) for hospitals. The solution is backed with multiple microservices like the Data Access Layer, Synthesizer, Harmonizer, Orchestrator, Application layer, and a RabbitMQ message broker, all communicating through gRPC calls.",
+        "Awarded Bravo Award for time critical delivery of data analytics to a major client."
       ]
     },
     {
       role: "Software Engineering Specialist",
       company: "GE Power",
       companylogo: require("./assets/images/geLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "January 2020 – August 2021",
+      desc: "I built tools and workflows to bring transparency to the status and timelines of all delivery and service requests of the company’s turbines and spare parts.",
+      descBullets: [
+        "Contributed to several community service projects, including supporting the reconstruction of two schools, celebrating festivals with orphaned kids, and organizing a cleanliness campaign at Bangalore’s favorite vacation spot (Nandi Hills)",
+        "Recognized with 4 ‘Impact Awards’ for my contribution to company events, software solutions, and volunteering ventures over my 1.5-year tenure"
+      ]
     },
     {
       role: "Software Engineer Intern",
       company: "Cisco",
       companylogo: require("./assets/images/ciscoLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "May 2018 – June 2018",
+      desc: "Short but impressionable stint at Cisco: I worked on building a spoof-proof 2-D Face Recognition system, using Python (OpenCV, DLib, Scikit-learn, Matplotlib.)"
     }
   ]
 };
@@ -326,11 +328,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Drop in and say hi!",
   number: "+1-4122517654",
-  email_address: "sauravyadav3@gmail.com"
+  email_address: "sauravy@andrew.cmu.edu"
 };
 
 // Twitter Section

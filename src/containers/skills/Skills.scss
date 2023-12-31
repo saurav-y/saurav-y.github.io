@@ -16,8 +16,18 @@
 }
 
 .skills-image-div > img {
-  max-width: 100%;
+  max-width: 90%;
+  max-height: 90%;
   height: auto;
+  background-color: rgb(216, 179, 169);
+  border-radius: 50%; /* To make the frame rounded */
+  overflow: hidden; /* Ensure the image stays within the rounded frame */
+}
+
+.skills-image-div{
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .skills-heading {

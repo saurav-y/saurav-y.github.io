@@ -34,6 +34,8 @@
   margin-top: 20px;
 }
 
+
+
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
@@ -45,9 +47,30 @@
   line-height: 40px;
 }
 
+/* Adjust the styles according to your design */
+.greeting-text-ul {
+  list-style: none; /* Remove default list styles */
+  padding-left: 0; /* Add some padding for indentation */
+}
+
+.greeting-text-ul li {
+  margin-bottom: 8px; /* Add space between each bullet point */
+}
+
 .greeting-image-div > img {
-  max-width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 50px;
   height: auto;
+  background-color: aliceblue;
+  border-radius: 50%; /* To make the frame rounded */
+  overflow: hidden; /* Ensure the image stays within the rounded frame */
+}
+
+.greeting-image-div {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .wave-emoji {
