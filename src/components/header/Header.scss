@@ -8,7 +8,7 @@
 /* header */
 
 .dark-menu {
-  background-color: $darkBackground !important;
+  background-color: $darkBgColor !important;
   color: $textColorDark;
 }
 
@@ -48,6 +48,14 @@
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: $headerHoverBG;
+}
+
+.music-icon-container {
+  /* Center the music icon */
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin: 0 auto; /* Optional: Center horizontally */
 }
 
 .header .logo {

@@ -1,9 +1,15 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
+import { FcMusic } from 'react-icons/fc';
+import { TbMusicPause } from "react-icons/tb";
+import { TbMusic } from "react-icons/tb";
+import song from "../../assets/audio/song_1.mp3";
+
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import { FcViewDetails, FcPhone, FcBriefcase, FcMindMap } from "react-icons/fc";
+import Sound from 'react-sound';
 import {
   greeting,
   workExperiences,
@@ -22,6 +28,12 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const toggleAudio = () => {
+    setIsPlaying(!isPlaying);
+  };
 
   return (
     <Headroom>
@@ -39,6 +51,8 @@ function Header() {
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
+
+                
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
@@ -91,7 +105,26 @@ function Header() {
               <ToggleSwitch />
             </a>
           </li>
+          
         </ul>
+
+        <div className="music-icon-container">
+          <a href="#" onClick={toggleAudio}>
+            {isPlaying ? (
+                          <TbMusicPause/>
+                        ) : (
+                          <FcMusic/>
+              )}
+          </a>
+          
+          <Sound
+            url={song}
+            playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.PAUSED}
+            volume={35}
+            loop={true}
+          />
+        
+        </div>
       </header>
     </Headroom>
   );
