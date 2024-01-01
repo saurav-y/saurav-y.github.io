@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb941cf7.css",
+    "main.css": "/static/css/main.8375a7ff.css",
     "main.js": "/static/js/main.2e4e46d4.js",
     "static/css/64.7684d46e.chunk.css": "/static/css/64.7684d46e.chunk.css",
     "static/js/64.351a7a06.chunk.js": "/static/js/64.351a7a06.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/saayaHealthLogo.webp": "/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.bb941cf7.css.map": "/static/css/main.bb941cf7.css.map",
+    "main.8375a7ff.css.map": "/static/css/main.8375a7ff.css.map",
     "main.2e4e46d4.js.map": "/static/js/main.2e4e46d4.js.map",
     "64.7684d46e.chunk.css.map": "/static/css/64.7684d46e.chunk.css.map",
     "64.351a7a06.chunk.js.map": "/static/js/64.351a7a06.chunk.js.map",
@@ -28,7 +28,7 @@
     "769.3e3df96b.chunk.js.map": "/static/js/769.3e3df96b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb941cf7.css",
+    "static/css/main.8375a7ff.css",
     "static/js/main.2e4e46d4.js"
   ]
 }
