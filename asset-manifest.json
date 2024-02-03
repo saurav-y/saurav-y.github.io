@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.8375a7ff.css",
-    "main.js": "/static/js/main.2e4e46d4.js",
+    "main.js": "/static/js/main.65b29302.js",
     "static/css/64.7684d46e.chunk.css": "/static/css/64.7684d46e.chunk.css",
     "static/js/64.351a7a06.chunk.js": "/static/js/64.351a7a06.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.3e3df96b.chunk.js": "/static/js/769.3e3df96b.chunk.js",
-    "static/media/song_1.mp3": "/static/media/song_1.ea8a93f34a6dce29d766.mp3",
     "static/media/learning.jpg": "/static/media/learning.9749eb223e35c8061ed0.jpg",
+    "static/media/song_2.mp3": "/static/media/song_2.50e093bd670e3d444030.mp3",
     "static/media/saurav_portrait.png": "/static/media/saurav_portrait.db707269430c42360d83.png",
     "static/media/geLogo.png": "/static/media/geLogo.85a0dd1472481e2e9338.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -17,11 +17,10 @@
     "static/media/cmuLogo.png": "/static/media/cmuLogo.028c81e7f053e60aa3dc.png",
     "static/media/ciscoLogo.png": "/static/media/ciscoLogo.61324c62de9a9b26c3ce.png",
     "static/media/codeInLogo.webp": "/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
-    "static/media/saayaHealthLogo.webp": "/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.8375a7ff.css.map": "/static/css/main.8375a7ff.css.map",
-    "main.2e4e46d4.js.map": "/static/js/main.2e4e46d4.js.map",
+    "main.65b29302.js.map": "/static/js/main.65b29302.js.map",
     "64.7684d46e.chunk.css.map": "/static/css/64.7684d46e.chunk.css.map",
     "64.351a7a06.chunk.js.map": "/static/js/64.351a7a06.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -29,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.8375a7ff.css",
-    "static/js/main.2e4e46d4.js"
+    "static/js/main.65b29302.js"
   ]
 }
