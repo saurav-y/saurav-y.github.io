@@ -222,7 +222,7 @@ const bigProjects = {
   subtitle: "Some of my projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/cmuLogo.png"),
       projectName: "Google",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
