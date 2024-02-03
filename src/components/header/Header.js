@@ -4,7 +4,7 @@ import "./Header.scss";
 import { FcMusic } from 'react-icons/fc';
 import { TbMusicPause } from "react-icons/tb";
 import { TbMusic } from "react-icons/tb";
-import song from "../../assets/audio/song_1.mp3";
+import song from "../../assets/audio/song_2.mp3";
 
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
