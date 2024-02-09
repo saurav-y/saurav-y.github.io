@@ -117,7 +117,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Carnegie Mennon University",
+      schoolName: "Carnegie Mellon University",
       logo: require("./assets/images/cmuLogo.png"),
       subHeader: "Master of Information Systems Management",
       duration: "May 2023 - May 2024",
