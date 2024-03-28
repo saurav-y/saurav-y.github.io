@@ -58,6 +58,30 @@
   // margin: 0 auto; /* Optional: Center horizontally */
 }
 
+.music-icon-container a {
+  display: inline-flex; // Use flex to center the icon inside the anchor
+  justify-content: center; // Center the content horizontally
+  align-items: center; // Center the content vertically
+  background-color: rgba(0, 0, 0, 0.1); // Semi-transparent black background for the shade effect
+  border-radius: 50%; // Make it circular
+  padding: 10px; // Adjust the padding to change the size of the circular background
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); // Optional: Add a shadow for depth
+  transition: background-color 0.3s, box-shadow 0.3s; // Smooth transition for hover effects
+
+  // Optional: Hover effect
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2); // Darker shade on hover
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); // Larger shadow on hover
+  }
+
+  svg {
+    width: 24px; // Control the size of the icon
+    height: auto;
+    fill: currentColor; // Ensure the icon color inherits from the anchor
+  }
+}
+
+
 .header .logo {
   display: block;
   flex: none;

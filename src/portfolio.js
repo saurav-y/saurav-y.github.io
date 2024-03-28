@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -31,14 +31,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saurav-y",
   linkedin: "https://www.linkedin.com/in/saurav-y/",
+  leetcode: "https://leetcode.com/sauravy/",
+  github: "https://github.com/saurav-y",
   gmail: "sauravyadav3@gmail.com",
+  medium: "https://medium.com/@sauravy",
   // gitlab: "https://gitlab.com/sauravyadav",
   // facebook: "https://www.facebook.com/saurav.yadav7",
-  // medium: "https://medium.com/@sauravyadav",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saurav-yadav",
-  // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
@@ -121,7 +121,7 @@ const educationInfo = {
       logo: require("./assets/images/cmuLogo.png"),
       subHeader: "Master of Information Systems Management",
       duration: "May 2023 - May 2024",
-      gpa: "3.9/4",
+      gpa: "3.93/4",
       desc: "Coursework: Distributed Sytems, NoSQL Database Management, Introduction to Machine Learning, Data Intensive Scalable Systems, Data Structures for Application Programmers",
       descBullets: [
         "Research Assistant: Leveraged Pandas to perform Data Analytics on a group of 300+ participants to identify the interdepencies of Drinking Alcohol and Social Demeanor.",
@@ -146,7 +146,6 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
-
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
@@ -191,7 +190,7 @@ const workExperiences = {
       company: "GE Power",
       companylogo: require("./assets/images/geLogo.png"),
       date: "January 2020 – August 2021",
-      desc: "I built tools and workflows to bring transparency to the status and timelines of all delivery and service requests of the company’s turbines and spare parts.",
+      desc: "I built solutions and workflows to bring transparency to the status and timelines of all delivery and service requests of the company’s turbines and spare parts.",
       descBullets: [
         "Contributed to several community service projects, including supporting the reconstruction of two schools, celebrating festivals with orphaned kids, and organizing a cleanliness campaign at Bangalore’s favorite vacation spot (Nandi Hills)",
         "Recognized with 4 ‘Impact Awards’ for my contribution to company events, software solutions, and volunteering ventures over my 1.5-year tenure"
@@ -218,23 +217,70 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "Some of my projects",
+  title: "Projects",
+  // subtitle: "Some of my projects",
   projects: [
     {
-      image: require("./assets/images/cmuLogo.png"),
-      projectName: "Google",
+      imageDir: [require("./assets/images/movie_recommendation_system/test_report.png"),],
+      projectName: "Movie Recommendation System",
+      bullets: ["Engineered real-time movie recommendation system with content filtering using Kafka-streamed live ratings data, achieving < 40ms response time through Flask-based model inference service.", 
+            "Orchestrated end-to-end data processing, model retraining, and Dockerized deployment pipeline with load balancing via Jenkins CI/CD, ensuring >99% uptime and continuous service availability.",
+            "Collaborated cross-functionally with Data and ML Engineers to develop and maintain high-performance system, implementing rigorous monitoring with Grafana and Prometheus for service reliability."],
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://google.com/"
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
+    },
+    {
+      imageDir: [require("./assets/images/data_intensive_scalable_bookstore/architechture_diag.png"),
+                require("./assets/images/data_intensive_scalable_bookstore/deployment_diag.png"),],
+      projectName: "Data Intensive Scalable Bookstore",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://google.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    }
+      bullets: ["Developed a Microservice Architecture based NodeJS Backend system for the cloud deployed bookstore.", 
+            "Deployed the application to AWS. Employed the Backends for Frontends Design Pattern and Circuit breakers to have 2 Load Balancers in place for supporting scalable, efficient and device customized routing capabilities.",
+            "Utilized Cloudformation templates for quick deployment of the infrastructure involving subnets, 4 EC2 instances, 2 Application Load Balancer instances and 2 RDS Relational Database Stores."],
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://google.com/"
+      //   }
+      // ]
+    },
+    {
+      imageDir: [require("./assets/images/happening/1705072463632.jpeg"),
+                require("./assets/images/happening/1705072572287.jpeg"),
+                require("./assets/images/happening/1705072846468.jpeg"),],
+      projectName: "Happening: Find events near you.",
+      bullets: ['Developed "Happening" as part of the Distributed Systems course, a Mobile-to-Cloud application, leveraging TicketMaster APIs as the primary data source for the application', 
+            "Engineered a cloud-deployed servlet to support seamless communication between the Android Mobile Application and the Logging + Analytics dashboard.",
+            "One of 14 projects from a cohort of 150+ students to receive a callout and be demoed in the class."],
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://google.com/"
+      //   }
+      // ]
+    },
+    {
+      imageDir: [require("./assets/images/bank_churn_prediction/1709598105093.jpeg"),
+                require("./assets/images/bank_churn_prediction/1709598125798.jpeg"),
+                require("./assets/images/bank_churn_prediction/1709598139437.jpeg"),
+                require("./assets/images/bank_churn_prediction/1709598164737.jpeg"),],                
+      projectName: "Bank Customer Churn Classification",
+      bullets: [" Built a Machine Learning System to detect bank customer churn likelihood, following the entire ML pipeline: Data Preprocessing, Feature Engineering, Training, Tuning, and Testing.", 
+            "Evaluated the performance of over 7 Models including KNN, Logistic Regression, Random Forest, and XGBoost, based on AUC-ROC, achieving an AUC-ROC of 80.5% and Accuracy of 83.2%.",],
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "http://google.com/"
+      //   }
+      // ]
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -296,7 +342,6 @@ const blogSection = {
 };
 
 // Talks Sections
-
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -350,11 +395,11 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
+  bigProjects,
   educationInfo,
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
   achievementSection,
   blogSection,
   talkSection,

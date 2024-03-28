@@ -42,11 +42,10 @@ export default function Greeting() {
                 <FcDownRight className="icon" /> A Former Senior Software Engineer at Nference.
               </li>
               <li>
-                <FcDownRight className="icon" /> A Former Software Engineer at GE Power.
+                <FcDownRight className="icon" /> A Former Software Engineer at General Electric.
               </li>
-
               <li>
-                <FcDownRight className="icon" /> On the lookout for SDE jobs for summer '24.
+                <FcDownRight className="icon" /> On the lookout for SWE jobs for May '24.
               </li>
             </ul>
 

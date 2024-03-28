@@ -8,9 +8,11 @@
   margin-bottom: 10px;
 }
 
-.icon-button i {
+.icon-button i,
+.icon-button img {
   color: $textColorDark;
   border-radius: 2.6rem;
+  vertical-align: middle;
   cursor: pointer;
   display: inline-block;
   font-size: 1.3rem;
@@ -34,6 +36,10 @@
 
 .linkedin i {
   background-color: $linkedin;
+}
+
+.leetcode img {
+  background-color: black;
 }
 
 .github i {
@@ -73,6 +79,7 @@
 .google i:hover,
 .gitlab i:hover,
 .github i:hover,
+.leetcode img:hover,
 .linkedin i:hover,
 .facebook i:hover,
 .instagram i:hover,

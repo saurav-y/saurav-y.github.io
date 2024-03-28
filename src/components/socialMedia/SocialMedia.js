@@ -8,6 +8,18 @@ export default function socialMedia() {
   }
   return (
     <div className="social-media-div">
+      {socialMediaLinks.linkedin ? (
+        <a
+          href={socialMediaLinks.linkedin}
+          className="icon-button linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin-in"></i>
+          <span></span>
+        </a>
+      ) : null}
+      
       {socialMediaLinks.github ? (
         <a
           href={socialMediaLinks.github}
@@ -20,15 +32,14 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.linkedin ? (
+      {socialMediaLinks.leetcode ? (
         <a
-          href={socialMediaLinks.linkedin}
-          className="icon-button linkedin"
+          href={socialMediaLinks.leetcode}
+          className="icon-button leetcode"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in"></i>
-          <span></span>
+          <img className="fab fa-linkedin-in" src={require('../../assets/images/lc.png')} alt="LeetCode" />
         </a>
       ) : null}
 

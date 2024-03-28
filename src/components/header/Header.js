@@ -13,6 +13,7 @@ import Sound from 'react-sound';
 import {
   greeting,
   workExperiences,
+  bigProjects,
   skillsSection,
   openSource,
   blogSection,
@@ -23,6 +24,7 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
+  const viewProjects = bigProjects.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
@@ -66,6 +68,13 @@ function Header() {
               <a href="#experience">
                 <FcBriefcase /> Work Experiences
                 </a>
+            </li>
+          )}
+          {viewProjects && (
+            <li>
+              <a href="#projects">
+              <FcMindMap/> Projects
+              </a>
             </li>
           )}
           {viewOpenSource && (

@@ -1,9 +1,12 @@
 @import "../../_globalColor";
 
-.card-image {
+.project-card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  max-height: 400px; // Adjust based on your layout
+  object-fit: contain;
+  margin: auto;
+  display: block;
 }
 .card-title {
   color: $titleColor;
@@ -18,7 +21,7 @@
   line-height: 1.5rem;
 }
 .project-card {
-  display: flex;
+  
   flex-direction: column;
   background-color: $lightBackground2;
   padding: 1.5rem;
@@ -49,14 +52,6 @@
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .projects-container {
   display: grid;
@@ -86,5 +81,60 @@
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+.project-carousel {
+  position: relative;
+  align-items: center;
+}
+
+.project-bullets {
+  list-style-type: disc; // Or any other style you prefer
+  padding-left: 20px; // Adjust according to your design
+  text-align: left;
+}
+
+.swiper {
+  padding: 20px; // Adds padding inside the swiper container, pushing content inward
+}
+
+.project-thumbnails {
+  .swiper-slide {
+    opacity: 0.4; // Thumbnails start out less opaque
+    &.swiper-slide-thumb-active {
+      opacity: 1; // Active thumbnail is fully opaque
+    }
+  }
+  
+  .thumbnail-image {
+    cursor: pointer;
+    max-height: 100%; // Ensure the thumbnail height is consistent
+    object-fit: cover;
+  }
+}
+
+.title-and-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center; // Centers the title
+  position: relative; // Enables absolute positioning for children
+
+  .card-title {
+    padding: 0 30px; // This provides space for the arrows. Adjust as needed.
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.left {
+      left: 10px; // Adjust the space from the left edge
+    }
+
+    &.right {
+      right: 10px; // Adjust the space from the right edge
+    }
   }
 }
