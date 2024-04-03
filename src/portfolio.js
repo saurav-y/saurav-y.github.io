@@ -221,7 +221,9 @@ const bigProjects = {
   // subtitle: "Some of my projects",
   projects: [
     {
-      imageDir: [require("./assets/images/movie_recommendation_system/test_report.png"),],
+      imageDir: [require("./assets/images/movie_recommendation_system/architechture.jpg"),
+            require("./assets/images/movie_recommendation_system/monitoring.jpg"),
+            require("./assets/images/movie_recommendation_system/testing.png"),],
       projectName: "Movie Recommendation System",
       bullets: ["Engineered real-time movie recommendation system with content filtering using Kafka-streamed live ratings data, achieving < 40ms response time through Flask-based model inference service.", 
             "Orchestrated end-to-end data processing, model retraining, and Dockerized deployment pipeline with load balancing via Jenkins CI/CD, ensuring >99% uptime and continuous service availability.",
