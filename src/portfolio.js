@@ -379,7 +379,7 @@ const contactInfo = {
   subtitle:
     "Drop in and say hi!",
   number: "+1-4122517654",
-  email_address: "sauravy@andrew.cmu.edu"
+  email_address: "sauravy@alumni.cmu.edu"
 };
 
 // Twitter Section
@@ -389,7 +389,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

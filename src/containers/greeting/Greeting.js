@@ -36,16 +36,16 @@ export default function Greeting() {
 
             <ul className={isDark ? "dark-mode greeting-text-ul" : "greeting-text-ul"}>
               <li>
-                <FcDownRight className="icon" /> A Graduate Student at Carnegie Mellon University.
+                <FcDownRight className="icon" /> Software Engineer at Amazon.
+              </li>
+              <li>
+                <FcDownRight className="icon" /> Carnegie Mellon University Alumni.
               </li>
               <li>
                 <FcDownRight className="icon" /> A Former Senior Software Engineer at Nference.
               </li>
               <li>
                 <FcDownRight className="icon" /> A Former Software Engineer at General Electric.
-              </li>
-              <li>
-                <FcDownRight className="icon" /> On the lookout for SWE jobs for May '24.
               </li>
             </ul>
 
